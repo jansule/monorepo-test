@@ -1,3 +1,9 @@
+## [1.0.2](https://github.com/jansule/monorepo-test/compare/v1.0.1...v1.0.2) (2026-09-28)
+
+### Bug Fixes
+
+* update package.json ([2a42795](https://github.com/jansule/monorepo-test/commit/2a427956312cadb773f5b80cc46f156c648fd574))
+
 ## [1.0.1](https://github.com/jansule/monorepo-test/compare/v1.0.0...v1.0.1) (2026-09-28)
 
 ### Bug Fixes
