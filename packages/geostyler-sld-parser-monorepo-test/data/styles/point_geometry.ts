@@ -1,0 +1,38 @@
+import { Style } from '../../../geostyler-style-monorepo-test/dist';
+
+const style: Style = {
+  name: 'point_geometry',
+  rules: [
+    {
+      name: 'Point at the end of a line geom',
+      symbolizers: [
+        {
+          kind: 'Mark',
+          wellKnownName: 'square',
+          color: '#FF0000',
+          radius: 3,
+          rotate: {
+            name: 'add',
+            args: [{
+              name: 'custom',
+              fnName: 'endAngle',
+              args: [{
+                name: 'property',
+                args: ['shape']
+              }],
+            }, 180]
+          },
+          geometry: {
+            name: 'endPoint',
+            args: [{
+              name: 'property',
+              args: ['shape']
+            }],
+          }
+        }
+      ]
+    }
+  ]
+};
+
+export default style;
