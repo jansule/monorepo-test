@@ -335,7 +335,7 @@ export class SldStyleParser implements StyleParser<string> {
     return trans;
   }
 
-  private _parser: XMLParser;
+  private _parser!: XMLParser;
   get parser(): XMLParser {
     return this._parser;
   }
@@ -343,7 +343,7 @@ export class SldStyleParser implements StyleParser<string> {
     this._parser = parser;
   }
 
-  private _builder: XMLBuilder;
+  private _builder!: XMLBuilder;
   get builder(): XMLBuilder {
     return this._builder;
   }
@@ -513,7 +513,7 @@ export class SldStyleParser implements StyleParser<string> {
         });
       } catch (error) {
         resolve({
-          errors: [error]
+          errors: [error as Error]
         });
       }
     });
@@ -1631,7 +1631,7 @@ export class SldStyleParser implements StyleParser<string> {
         });
       } catch (error) {
         resolve({
-          errors: [error]
+          errors: [error as Error]
         });
       }
     });
