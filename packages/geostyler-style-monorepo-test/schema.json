@@ -2727,6 +2727,24 @@
             },
             "type": "object"
         },
+        "Fcentroid": {
+            "description": "Returns the centroid of the specified geometry.",
+            "properties": {
+                "args": {
+                    "items": [
+                        {}
+                    ],
+                    "maxItems": 1,
+                    "minItems": 1,
+                    "type": "array"
+                },
+                "name": {
+                    "const": "centroid",
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
         "Fcos": {
             "description": "Returns the cosine of an angle expressed in radians",
             "properties": {
@@ -3307,6 +3325,24 @@
                 },
                 "name": {
                     "const": "double2bool",
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "FendPoint": {
+            "description": "Returns the end point of the specified geometry.",
+            "properties": {
+                "args": {
+                    "items": [
+                        {}
+                    ],
+                    "maxItems": 1,
+                    "minItems": 1,
+                    "type": "array"
+                },
+                "name": {
+                    "const": "endPoint",
                     "type": "string"
                 }
             },
@@ -6135,6 +6171,15 @@
                                     "$ref": "http://geostyler/geostyler-style.json#/definitions/FstrStartsWith"
                                 },
                                 {
+                                    "$ref": "http://geostyler/geostyler-style.json#/definitions/FstartPoint"
+                                },
+                                {
+                                    "$ref": "http://geostyler/geostyler-style.json#/definitions/FendPoint"
+                                },
+                                {
+                                    "$ref": "http://geostyler/geostyler-style.json#/definitions/Fcentroid"
+                                },
+                                {
                                     "type": [
                                         "null",
                                         "string",
@@ -6343,6 +6388,15 @@
                                 },
                                 {
                                     "$ref": "http://geostyler/geostyler-style.json#/definitions/FstrStartsWith"
+                                },
+                                {
+                                    "$ref": "http://geostyler/geostyler-style.json#/definitions/FstartPoint"
+                                },
+                                {
+                                    "$ref": "http://geostyler/geostyler-style.json#/definitions/FendPoint"
+                                },
+                                {
+                                    "$ref": "http://geostyler/geostyler-style.json#/definitions/Fcentroid"
                                 },
                                 {
                                     "type": [
@@ -9024,6 +9078,24 @@
                 },
                 "name": {
                     "const": "sqrt",
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "FstartPoint": {
+            "description": "Returns the start point of the specified geometry.",
+            "properties": {
+                "args": {
+                    "items": [
+                        {}
+                    ],
+                    "maxItems": 1,
+                    "minItems": 1,
+                    "type": "array"
+                },
+                "name": {
+                    "const": "startPoint",
                     "type": "string"
                 }
             },
@@ -17778,7 +17850,7 @@
                     "description": "The color of the stroke represented as a hex-color string."
                 },
                 "strokeDasharray": {
-                    "description": "Encodes a dash pattern as an array of numbers. Odd-indexed numbers (first,\nthird, etc) determine the length in pixels to draw the line, and even-indexed\nnumbers (second, fourth, etc) determine the length in pixels to blank out\nthe line. \nIf the array is empty, no dash pattern will be applied.",
+                    "description": "Encodes a dash pattern as an array of numbers. Odd-indexed numbers (first,\nthird, etc) determine the length in pixels to draw the line, and even-indexed\nnumbers (second, fourth, etc) determine the length in pixels to blank out\nthe line.\nIf the array is empty, no dash pattern will be applied.",
                     "items": {
                         "anyOf": [
                             {
@@ -19800,6 +19872,15 @@
                                             "$ref": "http://geostyler/geostyler-style.json#/definitions/FstrStartsWith"
                                         },
                                         {
+                                            "$ref": "http://geostyler/geostyler-style.json#/definitions/FstartPoint"
+                                        },
+                                        {
+                                            "$ref": "http://geostyler/geostyler-style.json#/definitions/FendPoint"
+                                        },
+                                        {
+                                            "$ref": "http://geostyler/geostyler-style.json#/definitions/Fcentroid"
+                                        },
+                                        {
                                             "type": [
                                                 "null",
                                                 "string",
@@ -20008,6 +20089,15 @@
                                         },
                                         {
                                             "$ref": "http://geostyler/geostyler-style.json#/definitions/FstrStartsWith"
+                                        },
+                                        {
+                                            "$ref": "http://geostyler/geostyler-style.json#/definitions/FstartPoint"
+                                        },
+                                        {
+                                            "$ref": "http://geostyler/geostyler-style.json#/definitions/FendPoint"
+                                        },
+                                        {
+                                            "$ref": "http://geostyler/geostyler-style.json#/definitions/Fcentroid"
                                         },
                                         {
                                             "type": [
