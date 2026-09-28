@@ -1,6 +1,6 @@
 {
   "name": "geostyler-sld-parser-monorepo-test",
-  "version": "9.0.3",
+  "version": "1.0.0",
   "description": "GeoStyler Style Parser implementation for SLD",
   "type": "module",
   "main": "dist/SldStyleParser.js",
@@ -36,7 +36,7 @@
   },
   "dependencies": {
     "fast-xml-parser": "^5.2.3",
-    "geostyler-style-monorepo-test": "^13.0.0"
+    "geostyler-style-monorepo-test": "^1.0.0"
   },
   "devDependencies": {
     "@stylistic/eslint-plugin": "^4.4.1",
