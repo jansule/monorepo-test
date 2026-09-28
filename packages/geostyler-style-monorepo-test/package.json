@@ -37,7 +37,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/geostyler/geostyler-style.git"
+    "url": "git+https://github.com/jansule/monorepo-test.git"
   },
   "author": "",
   "license": "BSD-2-Clause",
