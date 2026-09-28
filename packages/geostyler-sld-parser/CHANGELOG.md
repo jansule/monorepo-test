@@ -1,0 +1,365 @@
+## [9.0.3](https://github.com/geostyler/geostyler-sld-parser/compare/v9.0.2...v9.0.3) (2026-07-23)
+
+### Bug Fixes
+
+* do not drop numeric properties with value 0 or expression values [#1123](https://github.com/geostyler/geostyler-sld-parser/issues/1123) ([#1124](https://github.com/geostyler/geostyler-sld-parser/issues/1124)) ([5bdcd7c](https://github.com/geostyler/geostyler-sld-parser/commit/5bdcd7cae242948f5e34d6a0a8f7c55f608f8d0c))
+* write AnchorPoint before Displacement to match the SLD schema sequence ([#1125](https://github.com/geostyler/geostyler-sld-parser/issues/1125)) ([92da27a](https://github.com/geostyler/geostyler-sld-parser/commit/92da27a3634130fa428d0781ccc5d5892db2cca0))
+
+## [9.0.2](https://github.com/geostyler/geostyler-sld-parser/compare/v9.0.1...v9.0.2) (2026-06-24)
+
+### Bug Fixes
+
+* ensure browser build is included in releases ([b40d9b5](https://github.com/geostyler/geostyler-sld-parser/commit/b40d9b53d01a94b8456b89709cace5c840fbc0e0))
+
+## [9.0.1](https://github.com/geostyler/geostyler-sld-parser/compare/v9.0.0...v9.0.1) (2026-05-12)
+
+### Bug Fixes
+
+* use square as default wellKnownName ([550309e](https://github.com/geostyler/geostyler-sld-parser/commit/550309ea7abeddb7b5b581bd4313d74618b1223f))
+
+## [9.0.0](https://github.com/geostyler/geostyler-sld-parser/compare/v8.5.0...v9.0.0) (2026-05-07)
+
+### ⚠ BREAKING CHANGES
+
+* All expressions, filters and operators are now
+prefixed with the ogc namespace. If your code previously expected these
+elements to not have a prefix (e.g. <Add> instead of <ogc:Add>), you
+now have to adjust it accordingly.
+
+### Bug Fixes
+
+* prefix filter and expression with the ogc namespace ([#1112](https://github.com/geostyler/geostyler-sld-parser/issues/1112)) ([#1113](https://github.com/geostyler/geostyler-sld-parser/issues/1113)) ([8b8032d](https://github.com/geostyler/geostyler-sld-parser/commit/8b8032d96f97913d4f6197b469a8b5216981a9a1))
+
+## [8.5.0](https://github.com/geostyler/geostyler-sld-parser/compare/v8.4.2...v8.5.0) (2026-04-30)
+
+### Features
+
+* add support for geometry in symbolizers ([#1106](https://github.com/geostyler/geostyler-sld-parser/issues/1106)) ([918eb5a](https://github.com/geostyler/geostyler-sld-parser/commit/918eb5aee9aaf048d37dae2f59564c2939b608f6))
+* support expression in rotation ([#1104](https://github.com/geostyler/geostyler-sld-parser/issues/1104)) ([bccc2ad](https://github.com/geostyler/geostyler-sld-parser/commit/bccc2ad4c7bbd5457bafd8db11545ee57fbdcd0a))
+
+### Bug Fixes
+
+* less redundancy using geoStylerFunctionOrTextToSld ([00d9df6](https://github.com/geostyler/geostyler-sld-parser/commit/00d9df6372c17e8b803dd7d0481146458c020f92))
+* write sld arithmetic operators ([#1109](https://github.com/geostyler/geostyler-sld-parser/issues/1109)) ([b032dbc](https://github.com/geostyler/geostyler-sld-parser/commit/b032dbc48b6f24182136fa28c9405ebc3b12fc9b))
+
+## [8.4.2](https://github.com/geostyler/geostyler-sld-parser/compare/v8.4.1...v8.4.2) (2026-04-16)
+
+### Bug Fixes
+
+* fix handling of top level/singe node negated filters ([3191d2b](https://github.com/geostyler/geostyler-sld-parser/commit/3191d2b292d70c3efb5572ffd0cda123fa448725))
+
+## [8.4.1](https://github.com/geostyler/geostyler-sld-parser/compare/v8.4.0...v8.4.1) (2026-03-16)
+
+### Bug Fixes
+
+* use vite for the build ([218d94b](https://github.com/geostyler/geostyler-sld-parser/commit/218d94bffec6698fc7cc30786d6f600ad6ece7d9))
+
+## [8.4.0](https://github.com/geostyler/geostyler-sld-parser/compare/v8.3.0...v8.4.0) (2026-03-04)
+
+### Features
+
+* **#1065:** add newLine support and test ([117eedc](https://github.com/geostyler/geostyler-sld-parser/commit/117eedc045e5be3a6a027de64d184823d0af622e)), closes [#1065](https://github.com/geostyler/geostyler-sld-parser/issues/1065)
+* **#1065:** fix lint Commit Message ([9071354](https://github.com/geostyler/geostyler-sld-parser/commit/90713543c02a933ecbaa13a92426d8c2da4df3d6))
+
+### Bug Fixes
+
+* **#1051:** escape special characters, fix typo ([b7795f4](https://github.com/geostyler/geostyler-sld-parser/commit/b7795f4a3da99f95b6c7059484cef963c9bd7265))
+* update displacement-offset conversion ([48fbc28](https://github.com/geostyler/geostyler-sld-parser/commit/48fbc283ab1cd0bbd4d7b60f4cc03dbfa24f10e2))
+
+## [8.3.0](https://github.com/geostyler/geostyler-sld-parser/compare/v8.2.0...v8.3.0) (2026-01-30)
+
+### Features
+
+* **#1035:** change request ([7e06826](https://github.com/geostyler/geostyler-sld-parser/commit/7e068267f9db6551b5a2aeaf47d0410c9ddd3d7c)), closes [#1035](https://github.com/geostyler/geostyler-sld-parser/issues/1035)
+* **#1035:** fix linting ([ebdd20e](https://github.com/geostyler/geostyler-sld-parser/commit/ebdd20e5b0035630267a1e1d224f36a3a5c472d4))
+* **#1035:** implementing functions for textsymbolizers ([698669a](https://github.com/geostyler/geostyler-sld-parser/commit/698669a873a8225374b2ac0438fbafef5ef2c4c2)), closes [#1035](https://github.com/geostyler/geostyler-sld-parser/issues/1035)
+* support reading/writing TextSymbolizer repeat ([8524e6b](https://github.com/geostyler/geostyler-sld-parser/commit/8524e6baacc1a43a3aae6463e948ebd2d427405e))
+* support writing TextSymbolizer perpendicularOffset expression ([24343dd](https://github.com/geostyler/geostyler-sld-parser/commit/24343dd4aad44772202d75a3c74eda6377dfcb73))
+
+## [8.2.0](https://github.com/geostyler/geostyler-sld-parser/compare/v8.1.0...v8.2.0) (2025-11-05)
+
+### Features
+
+* **#1020:** add PerpendicularOffset as LinePlacement ([33d68b9](https://github.com/geostyler/geostyler-sld-parser/commit/33d68b9b4811ba24526be91bb7fb4bc0855d8848)), closes [#1020](https://github.com/geostyler/geostyler-sld-parser/issues/1020)
+* **#1020:** direct assignment to TextSymbolizer, added test ([c39b8ba](https://github.com/geostyler/geostyler-sld-parser/commit/c39b8baba4f9556d253f8142f886519d29a33a06)), closes [#1020](https://github.com/geostyler/geostyler-sld-parser/issues/1020)
+* **#1020:** fix failing check ([d652da0](https://github.com/geostyler/geostyler-sld-parser/commit/d652da054d11702ee90c57c4b48b5abede7a79e0))
+* **#1020:** perpendicularOffset can be undefined ([626438f](https://github.com/geostyler/geostyler-sld-parser/commit/626438f72b3883b761a7530baa93b8025731589e)), closes [#1020](https://github.com/geostyler/geostyler-sld-parser/issues/1020)
+* **#1020:** remove spaces, add curly brackets ([b140533](https://github.com/geostyler/geostyler-sld-parser/commit/b140533117177a90291c6af4e5b0fc720799ad61)), closes [#1020](https://github.com/geostyler/geostyler-sld-parser/issues/1020)
+* **#1020:** update package ([daf0881](https://github.com/geostyler/geostyler-sld-parser/commit/daf088126f8aab53bfcfff18c0176304d0d7f354)), closes [#1020](https://github.com/geostyler/geostyler-sld-parser/issues/1020)
+* **#1033:** add external graphic inline content base64 ([7616aa5](https://github.com/geostyler/geostyler-sld-parser/commit/7616aa5ffd93059041e19c1525cecaf30d90d46d)), closes [#1033](https://github.com/geostyler/geostyler-sld-parser/issues/1033)
+* **#1033:** fix lint manually ([17c814c](https://github.com/geostyler/geostyler-sld-parser/commit/17c814c9dcec9a819da83ceaff9a022c360b97be))
+* handle anchorpoints (reading and writing) ([#1022](https://github.com/geostyler/geostyler-sld-parser/issues/1022)) ([868511c](https://github.com/geostyler/geostyler-sld-parser/commit/868511c402f6e8f2c46501f528484574128c775a))
+
+### Bug Fixes
+
+* make sure GraphicFill appears before Css/SvgParameter in output SLD [#1030](https://github.com/geostyler/geostyler-sld-parser/issues/1030) ([#1040](https://github.com/geostyler/geostyler-sld-parser/issues/1040)) ([aab239b](https://github.com/geostyler/geostyler-sld-parser/commit/aab239bdb1c4f68896dfff96fc047c010b630877))
+
+## [8.1.0](https://github.com/geostyler/geostyler-sld-parser/compare/v8.0.1...v8.1.0) (2025-06-18)
+
+### Features
+
+* add more wellknownnames ([c08a055](https://github.com/geostyler/geostyler-sld-parser/commit/c08a055d589b24fa01df0b2d7d077a56579438b1))
+* add support for arithmetic functions in sld filter ([#981](https://github.com/geostyler/geostyler-sld-parser/issues/981), [#1010](https://github.com/geostyler/geostyler-sld-parser/issues/1010)) ([0b9eda4](https://github.com/geostyler/geostyler-sld-parser/commit/0b9eda48d6ad650cc88a06e6389c04b878af5f41))
+
+### Bug Fixes
+
+* replace dense5 wellknownname that is now supported ([359e5d1](https://github.com/geostyler/geostyler-sld-parser/commit/359e5d16e190b787f3f618eeaceee6f72c6a4279))
+* use geostyler-style 10.3 to fix build ([aaad9e5](https://github.com/geostyler/geostyler-sld-parser/commit/aaad9e5208708109defdd600de142433b453de6e))
+
+## [8.0.1](https://github.com/geostyler/geostyler-sld-parser/compare/v8.0.0...v8.0.1) (2025-06-06)
+
+### Bug Fixes
+
+* use geostyler-style 10.2 to fix build ([4d5cbdc](https://github.com/geostyler/geostyler-sld-parser/commit/4d5cbdcbc201f5357b2bd624ac8eaf28aaee9413))
+
+## [8.0.0](https://github.com/geostyler/geostyler-sld-parser/compare/v7.3.0...v8.0.0) (2025-06-06)
+
+### ⚠ BREAKING CHANGES
+
+* GeoServerVendorOption was too restrictive. You can
+now provide an sldEnvironment: GeoServer parameter. It adds
+VendorOption support.
+
+### Features
+
+* add displacement from point offset for geoserver ([e13db64](https://github.com/geostyler/geostyler-sld-parser/commit/e13db64f38c082f293e40d7ca636cce2e63ff333))
+* drop geoservervendoroption add sldenvironment ([2eda7a6](https://github.com/geostyler/geostyler-sld-parser/commit/2eda7a6a15ac04f98a780149ec8e399343870595))
+* support dasharray in stroke in mark symbolizer ([bfc2aa8](https://github.com/geostyler/geostyler-sld-parser/commit/bfc2aa8d28ef6eb4d31f7bdd6d42ed5916684423))
+
+### Bug Fixes
+
+* **#993:** add missing code ([b206151](https://github.com/geostyler/geostyler-sld-parser/commit/b206151a1dd7b1d5018432031259ff3611d3908f)), closes [#993](https://github.com/geostyler/geostyler-sld-parser/issues/993)
+* **deps:** update dependency geostyler-style to v10.1.0 ([82e0f77](https://github.com/geostyler/geostyler-sld-parser/commit/82e0f77ad0d8669115b68b16c0eb7f9e807293d5))
+* fix and cleanup workflows ([bf104b3](https://github.com/geostyler/geostyler-sld-parser/commit/bf104b3661b3effc199eaa74094d9766461ebeff))
+* join graphic-margin values with spaces for GeoServer vendor option ([fe8db5b](https://github.com/geostyler/geostyler-sld-parser/commit/fe8db5b55daa6c9db2a0951fafcc06c43b154b75))
+* support only spaces as separator in vendor-option graphic-margin ([b01783d](https://github.com/geostyler/geostyler-sld-parser/commit/b01783d60af29afd00538155e3bcf3ad531321ed))
+* support spaces as separator for vendor-option graphic-margin ([9e357b1](https://github.com/geostyler/geostyler-sld-parser/commit/9e357b1bbd811254206848f9b9e9894c576f8b05))
+* update geostyler-style imports ([9b5c088](https://github.com/geostyler/geostyler-sld-parser/commit/9b5c08894d6764572d5b2d23cc84ccbb65b62b6a))
+
+## [7.3.0](https://github.com/geostyler/geostyler-sld-parser/compare/v7.2.1...v7.3.0) (2025-02-19)
+
+
+### Features
+
+* add wellknownnames to support qgis markers ([#978](https://github.com/geostyler/geostyler-sld-parser/issues/978)) ([04b9090](https://github.com/geostyler/geostyler-sld-parser/commit/04b90901334c11da87cbf31282046f0504cc2570))
+
+## [7.2.1](https://github.com/geostyler/geostyler-sld-parser/compare/v7.2.0...v7.2.1) (2025-01-14)
+
+
+### Bug Fixes
+
+* linting ([#976](https://github.com/geostyler/geostyler-sld-parser/issues/976)) ([f0563be](https://github.com/geostyler/geostyler-sld-parser/commit/f0563be94455bda70c1394e9dc6a4fe204ff047c))
+
+## [7.2.0](https://github.com/geostyler/geostyler-sld-parser/compare/v7.1.0...v7.2.0) (2025-01-14)
+
+
+### Features
+
+* property to property comparison ([#975](https://github.com/geostyler/geostyler-sld-parser/issues/975)) ([72c794e](https://github.com/geostyler/geostyler-sld-parser/commit/72c794e2524f8ad0f8068d9f0d24a11f853980b1))
+
+## [7.1.0](https://github.com/geostyler/geostyler-sld-parser/compare/v7.0.0...v7.1.0) (2025-01-13)
+
+
+### Features
+
+* add vendor-option graphic-margin ([#971](https://github.com/geostyler/geostyler-sld-parser/issues/971)) ([be950ea](https://github.com/geostyler/geostyler-sld-parser/commit/be950eae89dd262e2018fbdca9fab6ceba75d83d))
+
+
+### Bug Fixes
+
+* update image format handling ([0093c6b](https://github.com/geostyler/geostyler-sld-parser/commit/0093c6b979affc4db005d7fb0868c87f9504a063))
+
+## [7.0.0](https://github.com/geostyler/geostyler-sld-parser/compare/v6.1.2...v7.0.0) (2024-10-09)
+
+
+### ⚠ BREAKING CHANGES
+
+* opacity will no longer be set to 1 on text
+symbolizer if opacity was not explicitly set.
+
+### Bug Fixes
+
+* test if opacity is really undefined ([#968](https://github.com/geostyler/geostyler-sld-parser/issues/968)) ([858b42b](https://github.com/geostyler/geostyler-sld-parser/commit/858b42bfc3a363cabceeeffd4fe9fffb9eda667f))
+
+## [6.1.2](https://github.com/geostyler/geostyler-sld-parser/compare/v6.1.1...v6.1.2) (2024-08-26)
+
+
+### Bug Fixes
+
+* updates fast-xml-parser ([511e02f](https://github.com/geostyler/geostyler-sld-parser/commit/511e02f275fef6f77c50cbc1681db433b9485062))
+
+## [6.1.1](https://github.com/geostyler/geostyler-sld-parser/compare/v6.1.0...v6.1.1) (2024-07-09)
+
+
+### Bug Fixes
+
+* fix reading CDATA values from SLD ([3afb066](https://github.com/geostyler/geostyler-sld-parser/commit/3afb0669c81bd36326126e46cd5cb8e7fa9fece7))
+
+## [6.1.0](https://github.com/geostyler/geostyler-sld-parser/compare/v6.0.0...v6.1.0) (2024-07-04)
+
+
+### Features
+
+* reimplementing i18n for error messages without i18next [#923](https://github.com/geostyler/geostyler-sld-parser/issues/923) [#924](https://github.com/geostyler/geostyler-sld-parser/issues/924) [#928](https://github.com/geostyler/geostyler-sld-parser/issues/928) [#944](https://github.com/geostyler/geostyler-sld-parser/issues/944) ([8252180](https://github.com/geostyler/geostyler-sld-parser/commit/825218070948d162d66d39ba6c414f63e90f5445))
+
+## [6.0.0](https://github.com/geostyler/geostyler-sld-parser/compare/v5.4.0...v6.0.0) (2024-06-25)
+
+
+### ⚠ BREAKING CHANGES
+
+* You may need to adapt your imports. Also the
+location of the browser build has changed.
+
+### Features
+
+* update package versions and switch to esm build ([42e6a2c](https://github.com/geostyler/geostyler-sld-parser/commit/42e6a2c662689e1c1ffcb6efa8c5402183d88d25))
+
+
+### Bug Fixes
+
+* fix commitlint config ([c1db90d](https://github.com/geostyler/geostyler-sld-parser/commit/c1db90de873c0e410b19a3e82e59a6cf96caa4b9))
+* update commitlint ([390e668](https://github.com/geostyler/geostyler-sld-parser/commit/390e668487f86976b4e9b5a3afaf20b8ca04f800))
+* update geostyler-style & cleanup package.json ([4183cb2](https://github.com/geostyler/geostyler-sld-parser/commit/4183cb26c3673e68bd6ed118a856212063224897))
+* update geostyler-style version ([fe34f47](https://github.com/geostyler/geostyler-sld-parser/commit/fe34f47e5943f8ac9d3fa0dc8fcebf04a64baca4))
+* update null checks for number values ([299b6c3](https://github.com/geostyler/geostyler-sld-parser/commit/299b6c3d5dbe890022f4d072c7ca57a013cbfc15))
+* update semantic release ([809698c](https://github.com/geostyler/geostyler-sld-parser/commit/809698c1a8802ba15fca60e6163c7ae415733695))
+* use bundler module resolution ([79eebaf](https://github.com/geostyler/geostyler-sld-parser/commit/79eebaf68cb1c49e5f91cb13f85239851643f67a))
+* use node 20 ([aa0cdcd](https://github.com/geostyler/geostyler-sld-parser/commit/aa0cdcdbb6362b2362671faaed1824a5ee59bf26))
+* use preserve module strategy ([40ffc9c](https://github.com/geostyler/geostyler-sld-parser/commit/40ffc9c3739889d76fc4ab225e6999abbc07b134))
+
+## [6.0.0-next.1](https://github.com/geostyler/geostyler-sld-parser/compare/v5.4.0...v6.0.0-next.1) (2024-06-25)
+
+
+### ⚠ BREAKING CHANGES
+
+* You may need to adapt your imports. Also the
+location of the browser build has changed.
+
+### Features
+
+* update package versions and switch to esm build ([42e6a2c](https://github.com/geostyler/geostyler-sld-parser/commit/42e6a2c662689e1c1ffcb6efa8c5402183d88d25))
+
+
+### Bug Fixes
+
+* fix commitlint config ([c1db90d](https://github.com/geostyler/geostyler-sld-parser/commit/c1db90de873c0e410b19a3e82e59a6cf96caa4b9))
+* update commitlint ([390e668](https://github.com/geostyler/geostyler-sld-parser/commit/390e668487f86976b4e9b5a3afaf20b8ca04f800))
+* update geostyler-style & cleanup package.json ([4183cb2](https://github.com/geostyler/geostyler-sld-parser/commit/4183cb26c3673e68bd6ed118a856212063224897))
+* update geostyler-style version ([fe34f47](https://github.com/geostyler/geostyler-sld-parser/commit/fe34f47e5943f8ac9d3fa0dc8fcebf04a64baca4))
+* update null checks for number values ([299b6c3](https://github.com/geostyler/geostyler-sld-parser/commit/299b6c3d5dbe890022f4d072c7ca57a013cbfc15))
+* update semantic release ([809698c](https://github.com/geostyler/geostyler-sld-parser/commit/809698c1a8802ba15fca60e6163c7ae415733695))
+* use bundler module resolution ([79eebaf](https://github.com/geostyler/geostyler-sld-parser/commit/79eebaf68cb1c49e5f91cb13f85239851643f67a))
+* use node 20 ([aa0cdcd](https://github.com/geostyler/geostyler-sld-parser/commit/aa0cdcdbb6362b2362671faaed1824a5ee59bf26))
+* use preserve module strategy ([40ffc9c](https://github.com/geostyler/geostyler-sld-parser/commit/40ffc9c3739889d76fc4ab225e6999abbc07b134))
+
+### Bug Fixes
+
+* offset Y for Textsymbolizer ([#932](https://github.com/geostyler/geostyler-sld-parser/issues/932)) ([398ce0c](https://github.com/geostyler/geostyler-sld-parser/commit/398ce0ca844e17d06e37ebc3eb8099c1d71f454f)), closes [#566](https://github.com/geostyler/geostyler-sld-parser/issues/566)
+
+## [6.0.0-next.7](https://github.com/geostyler/geostyler-sld-parser/compare/v6.0.0-next.6...v6.0.0-next.7) (2024-06-19)
+
+### Bug Fixes
+
+* use node 20 ([c11137d](https://github.com/geostyler/geostyler-sld-parser/commit/c11137d28d9722c079fdcc9223425ceced31dd71))
+
+## [6.0.0-next.6](https://github.com/geostyler/geostyler-sld-parser/compare/v6.0.0-next.5...v6.0.0-next.6) (2024-06-19)
+
+
+### Bug Fixes
+
+* use preserve module strategy ([6934882](https://github.com/geostyler/geostyler-sld-parser/commit/6934882a37962020aa2f5ced6bc88420f1e99b46))
+
+## [6.0.0-next.5](https://github.com/geostyler/geostyler-sld-parser/compare/v6.0.0-next.4...v6.0.0-next.5) (2024-06-19)
+
+
+### Bug Fixes
+
+* use bundler module resolution ([05f3055](https://github.com/geostyler/geostyler-sld-parser/commit/05f3055f4135a1b0459d8e3c174c16e1ea4ad9ca))
+
+## [6.0.0-next.4](https://github.com/geostyler/geostyler-sld-parser/compare/v6.0.0-next.3...v6.0.0-next.4) (2024-06-19)
+
+
+### Bug Fixes
+
+* fix commitlint config ([6ec0730](https://github.com/geostyler/geostyler-sld-parser/commit/6ec07303d92d23c86ef955163e357586986b9d36))
+
+## [6.0.0-next.3](https://github.com/geostyler/geostyler-sld-parser/compare/v6.0.0-next.2...v6.0.0-next.3) (2024-06-19)
+
+
+### Bug Fixes
+
+* update semantic release ([3897a2c](https://github.com/geostyler/geostyler-sld-parser/commit/3897a2c53f38c0e20fdb158c0c2c7ea68750d993))
+
+## [6.0.0-next.2](https://github.com/geostyler/geostyler-sld-parser/compare/v6.0.0-next.1...v6.0.0-next.2) (2024-06-19)
+
+
+### Bug Fixes
+
+* update commitlint ([fdc74dc](https://github.com/geostyler/geostyler-sld-parser/commit/fdc74dcbf3c294a02e0a318549d6cb091a2ab2e1))
+
+## [6.0.0-next.1](https://github.com/geostyler/geostyler-sld-parser/compare/v5.3.1...v6.0.0-next.1) (2024-06-19)
+
+
+### ⚠ BREAKING CHANGES
+
+* You may need to adapt your imports. Also the
+location of the browser build has changed.
+
+### Features
+
+* update package versions and switch to esm build ([3284c97](https://github.com/geostyler/geostyler-sld-parser/commit/3284c97455240cb0b7b403da00439fedcbd6141e))
+
+## [5.4.0](https://github.com/geostyler/geostyler-sld-parser/compare/v5.3.1...v5.4.0) (2024-06-21)
+
+
+### Features
+
+* Extract SLD version from SLD ([#926](https://github.com/geostyler/geostyler-sld-parser/issues/926)) ([56f231b](https://github.com/geostyler/geostyler-sld-parser/commit/56f231bf57b15242a5451ce9797847018053d201))
+* implement i18n for error messages [#923](https://github.com/geostyler/geostyler-sld-parser/issues/923) [#924](https://github.com/geostyler/geostyler-sld-parser/issues/924) ([#928](https://github.com/geostyler/geostyler-sld-parser/issues/928)) ([e01c8c8](https://github.com/geostyler/geostyler-sld-parser/commit/e01c8c837bfcb0dc36912f8cc25581ccc2bfe3f3))
+
+
+## [5.3.1](https://github.com/geostyler/geostyler-sld-parser/compare/v5.3.0...v5.3.1) (2024-02-13)
+
+
+### Bug Fixes
+
+* actually set xmlns on filter ([bc12246](https://github.com/geostyler/geostyler-sld-parser/commit/bc1224693669d2c63fcadb295875c3c343712b8f))
+
+## [5.3.0](https://github.com/geostyler/geostyler-sld-parser/compare/v5.2.0...v5.3.0) (2024-02-13)
+
+
+### Features
+
+* read/write labelplacement ([260c80d](https://github.com/geostyler/geostyler-sld-parser/commit/260c80d082ca57c7ecf409b0787b8d00c001954f))
+
+
+### Bug Fixes
+
+* omit setting style title for sld 1.1.0 ([2f24602](https://github.com/geostyler/geostyler-sld-parser/commit/2f246023ac0abe961c02270bcb45af3772c6da5c))
+* remove unintended se namespace prefix from filter ([389b010](https://github.com/geostyler/geostyler-sld-parser/commit/389b010e0038d4edf50984ac4352f582d29d0eac))
+* remove unnecessary ogc: prefix from filter ([450ee8f](https://github.com/geostyler/geostyler-sld-parser/commit/450ee8f963c929b566c9c3c1ac505a469e5c8bb2))
+
+## [5.2.0](https://github.com/geostyler/geostyler-sld-parser/compare/v5.1.0...v5.2.0) (2023-12-04)
+
+
+### Features
+
+* **deps:** updates geostyler-style to v8 ([7200e79](https://github.com/geostyler/geostyler-sld-parser/commit/7200e790bd1cb0ce0d81e1787fe648bb4ad09026))
+
+
+### Bug Fixes
+
+* **deps:** update dependency fast-xml-parser to v4.2.4 [security] ([cba8616](https://github.com/geostyler/geostyler-sld-parser/commit/cba8616529c24c5db30cfc9e5d515484913493fc))
+* **deps:** update dependency fast-xml-parser to v4.2.5 [security] ([72e5b96](https://github.com/geostyler/geostyler-sld-parser/commit/72e5b96fbdfd1eae7bbaea2882dfa5cd818d9900))
+* **deps:** update dependency fast-xml-parser to v4.2.7 ([aeee571](https://github.com/geostyler/geostyler-sld-parser/commit/aeee571d90b82d6437dba31bbe55a69315fa3b39))
+* update semantic-release configs ([fa147d9](https://github.com/geostyler/geostyler-sld-parser/commit/fa147d9cda7a0b97500c815d8b462f8965196a2b))
+
+# Version 5.0.0
+
+- `prettyOutput` constructor option was removed
+  - use `format` in `builderOptions` instead
+- `forceCasting` constructor option was removed
+  - TagValues will be cast to their respective types by default
+  - use `parseTagValue` option of parserOptions to change behaviour
+- Labels with leading or dangling whitespaces have to use `<![CDATA[]]>`
+  compare `point_styledLabel_literalPlaceholder.sld` in data/slds
