@@ -37,7 +37,7 @@ import {
   WriteStyleResult,
   DistanceUnit,
   BasePointSymbolizer, BaseSymbolizer
-} from 'geostyler-style';
+} from 'geostyler-style-monorepo-test';
 import {
   X2jOptions,
   XMLBuilder,
@@ -1655,7 +1655,7 @@ export class SldStyleParser implements StyleParser<string> {
   }
 
   /**
-   * Get the SLD Object (readable with fast-xml-parser) from a geostyler-style
+   * Get the SLD Object (readable with fast-xml-parser) from 'geostyler-style-monorepo-test
    *
    * @param geoStylerStyle A geostyler-style.
    * @return The object representation of a SLD Style (readable with fast-xml-parser)
@@ -1723,7 +1723,7 @@ export class SldStyleParser implements StyleParser<string> {
   }
 
   /**
-   * Get the SLD Object (readable with fast-xml-parser) from a geostyler-style Rule.
+   * Get the SLD Object (readable with fast-xml-parser) from 'geostyler-style-monorepo-test Rule.
    *
    * @param rules An array of geostyler-style Rules.
    * @return The object representation of a SLD Rule (readable with fast-xml-parser)
@@ -1793,7 +1793,7 @@ export class SldStyleParser implements StyleParser<string> {
   }
 
   /**
-   * Get the SLD Object (readable with fast-xml-parser) from a geostyler-style ComparisonFilter.
+   * Get the SLD Object (readable with fast-xml-parser) from 'geostyler-style-monorepo-test ComparisonFilter.
    *
    * @param comparisonFilter A geostyler-style ComparisonFilter.
    * @return The object representation of a SLD Filter Expression with a
@@ -1917,7 +1917,7 @@ export class SldStyleParser implements StyleParser<string> {
   }
 
   /**
-   * Get the SLD Object (readable with fast-xml-parser) from a geostyler-style Filter.
+   * Get the SLD Object (readable with fast-xml-parser) from 'geostyler-style-monorepo-test Filter.
    *
    * @param filter A geostyler-style Filter.
    * @return The object representation of a SLD Filter Expression (readable with fast-xml-parser)
@@ -2000,7 +2000,7 @@ export class SldStyleParser implements StyleParser<string> {
 
 
   /**
-   * Get the SLD Object (readable with fast-xml-parser) from geostyler-style Symbolizers.
+   * Get the SLD Object (readable with fast-xml-parser) from 'geostyler-style-monorepo-test Symbolizers.
    *
    * @param symbolizers A geostyler-style Symbolizer array.
    * @return The object representation of a SLD Symbolizer (readable with fast-xml-parser)
@@ -2054,7 +2054,7 @@ export class SldStyleParser implements StyleParser<string> {
   }
 
   /**
-   * Get the SLD Displacement Object (readable with fast-xml-parser) from a geostyler-style offset.
+   * Get the SLD Displacement Object (readable with fast-xml-parser) from 'geostyler-style-monorepo-test offset.
    * In SLD positive y values mean a displacement to the top.
    * In geostyler-style positive y values mean a displacement to the bottom.
    * Thus the y value is inverted.
@@ -2086,7 +2086,7 @@ export class SldStyleParser implements StyleParser<string> {
   }
 
   /**
-   * Get the SLD Object (readable with fast-xml-parser) from a geostyler-style MarkSymbolizer.
+   * Get the SLD Object (readable with fast-xml-parser) from 'geostyler-style-monorepo-test MarkSymbolizer.
    *
    * @param markSymbolizer A geostyler-style MarkSymbolizer.
    * @return The object representation of a SLD PointSymbolizer with a Mark
@@ -2318,7 +2318,7 @@ export class SldStyleParser implements StyleParser<string> {
   }
 
   /**
-   * Get the SLD Object (readable with fast-xml-parser) from a geostyler-style IconSymbolizer.
+   * Get the SLD Object (readable with fast-xml-parser) from 'geostyler-style-monorepo-test IconSymbolizer.
    *
    * @param iconSymbolizer A geostyler-style IconSymbolizer.
    * @return The object representation of a SLD PointSymbolizer with
@@ -2516,7 +2516,7 @@ export class SldStyleParser implements StyleParser<string> {
   }
 
   /**
-   * Get the SLD Object (readable with fast-xml-parser) from a geostyler-style TextSymbolizer.
+   * Get the SLD Object (readable with fast-xml-parser) from 'geostyler-style-monorepo-test TextSymbolizer.
    *
    * @param textSymbolizer A geostyler-style TextSymbolizer.
    * @return The object representation of a SLD TextSymbolizer (readable with fast-xml-parser)
@@ -2892,7 +2892,7 @@ export class SldStyleParser implements StyleParser<string> {
   }
 
   /**
-   * Get the SLD Object (readable with fast-xml-parser) from a geostyler-style LineSymbolizer.
+   * Get the SLD Object (readable with fast-xml-parser) from 'geostyler-style-monorepo-test LineSymbolizer.
    *
    * @param lineSymbolizer A geostyler-style LineSymbolizer.
    * @return The object representation of a SLD LineSymbolizer (readable with fast-xml-parser)
@@ -3020,7 +3020,7 @@ export class SldStyleParser implements StyleParser<string> {
   }
 
   /**
-   * Get the SLD Object (readable with fast-xml-parser) from a geostyler-style FillSymbolizer.
+   * Get the SLD Object (readable with fast-xml-parser) from 'geostyler-style-monorepo-test FillSymbolizer.
    *
    * @param fillSymbolizer A geostyler-style FillSymbolizer.
    * @return The object representation of a SLD PolygonSymbolizer (readable with fast-xml-parser)
@@ -3150,7 +3150,7 @@ export class SldStyleParser implements StyleParser<string> {
   }
 
   /**
-   * Get the SLD Object (readable with fast-xml-parser) from a geostyler-style RasterSymbolizer.
+   * Get the SLD Object (readable with fast-xml-parser) from 'geostyler-style-monorepo-test RasterSymbolizer.
    *
    * @param rasterSymbolizer A geostyler-style RasterSymbolizer.
    * @return The object representation of a SLD RasterSymbolizer (readable with fast-xml-parser)
@@ -3214,7 +3214,7 @@ export class SldStyleParser implements StyleParser<string> {
   }
 
   /**
-   * Get the SLD Object (readable with fast-xml-parser) from a geostyler-style ColorMap.
+   * Get the SLD Object (readable with fast-xml-parser) from 'geostyler-style-monorepo-test ColorMap.
    *
    * @param colorMap A geostyler-style ColorMap.
    * @return The object representation of a SLD ColorMap (readable with fast-xml-parser)
@@ -3264,7 +3264,7 @@ export class SldStyleParser implements StyleParser<string> {
   }
 
   /**
-   * Get the SLD Object (readable with fast-xml-parser) from a geostyler-style ChannelSelection.
+   * Get the SLD Object (readable with fast-xml-parser) from 'geostyler-style-monorepo-test ChannelSelection.
    *
    * @param channelSelection A geostyler-style ChannelSelection.
    * @return The object representation of a SLD ChannelSelection (readable with fast-xml-parser)
@@ -3308,7 +3308,7 @@ export class SldStyleParser implements StyleParser<string> {
   }
 
   /**
-     * Get the SLD Object (readable with fast-xml-parser) from a geostyler-style ContrastEnhancement.
+     * Get the SLD Object (readable with fast-xml-parser) from 'geostyler-style-monorepo-test ContrastEnhancement.
      *
      * @param contrastEnhancement A geostyler-style ContrastEnhancement.
      * @return The object representation of a SLD ContrastEnhancement (readable with fast-xml-parser)

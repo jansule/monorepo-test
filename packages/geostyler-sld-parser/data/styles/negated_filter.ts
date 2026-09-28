@@ -1,4 +1,4 @@
-import { Style } from 'geostyler-style';
+import { Style } from 'geostyler-style-monorepo-test';
 
 const negatedFilter: Style = {
   name: 'Default Styler',

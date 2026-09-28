@@ -15,7 +15,7 @@ We are happy to announce the next **online-only** GeoStyler Code Sprint from **2
 ES6:
 ```js
 import SLDParser from 'geostyler-sld-parser';
-import { Style } from 'geostyler-style';
+import { Style } from 'geostyler-style-monorepo-test';
 
 const pointSimplePoint = {
   name: 'My Style',

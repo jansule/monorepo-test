@@ -1,4 +1,4 @@
-import { Style } from 'geostyler-style';
+import { Style } from 'geostyler-style-monorepo-test';
 
 const pointSimpleSlash: Style = {
   name: 'Simple Slash',

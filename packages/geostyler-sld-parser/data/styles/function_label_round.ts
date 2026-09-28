@@ -1,4 +1,4 @@
-import { Style } from 'geostyler-style';
+import { Style } from 'geostyler-style-monorepo-test';
 
 const functionLabelRound: Style = {
 name: 'Line Label with rounded value',
@@ -17,7 +17,7 @@ name: 'Line Label with rounded value',
     },
     {
       name: '',
-      symbolizers: [{ 
+      symbolizers: [{
       kind: 'Text',
       color: '#38a800',
       font: ['Arial'],

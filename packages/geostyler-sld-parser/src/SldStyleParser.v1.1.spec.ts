@@ -5,7 +5,7 @@ import * as fs from 'fs';
 import SldStyleParser from './SldStyleParser';
 import { beforeEach, expect, it, describe } from 'vitest';
 import { XMLParser } from 'fast-xml-parser';
-import { LineSymbolizer } from 'geostyler-style';
+import { LineSymbolizer } from 'geostyler-style-monorepo-test';
 
 import geometry from '../data/styles/geometry';
 import empty_filter from '../data/styles/empty_filter';

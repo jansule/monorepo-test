@@ -8,7 +8,7 @@ import { expect, it, describe } from 'vitest';
 import point_simplepoint from '../data/styles/point_simplepoint';
 // @ts-ignore
 import cdata from '../data/styles/cdata';
-import { TextSymbolizer } from 'geostyler-style';
+import { TextSymbolizer } from 'geostyler-style-monorepo-test';
 
 describe('SldStyleParser implements StyleParser (reading from one version and writing to another version)', () => {
   it('can read and write a SLD PointSymbolizer (from 1.0.0 version to 1.1.0 version)', async () => {

@@ -5,7 +5,7 @@ import {
   GeoStylerNumberFunction,
   isGeoStylerFunction,
   isGeoStylerNumberFunction, Fcustom
-} from 'geostyler-style';
+} from 'geostyler-style-monorepo-test';
 import { SldVersion, ARITHMETIC_OPERATORS, type ArithmeticType } from '../SldStyleParser';
 
 

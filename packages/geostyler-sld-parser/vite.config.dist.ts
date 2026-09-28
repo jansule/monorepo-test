@@ -11,7 +11,7 @@ export default defineConfig({
       fileName: 'SldStyleParser',
     },
     rollupOptions: {
-      external: ['geostyler-style', 'fast-xml-parser'],
+      external: ['geostyler-style-monorepo-test', 'fast-xml-parser'],
       output: {
         dir: 'dist',
         preserveModules: true,
