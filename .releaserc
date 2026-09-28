@@ -23,7 +23,18 @@
       }
     ],
     "@semantic-release/changelog",
-    "@semantic-release/npm",
+    [
+      "@semantic-release/npm",
+      {
+        "pkgRoot": "./packages/geostyler-style-monorepo-test"
+      }
+    ],
+    [
+      "@semantic-release/npm",
+      {
+        "pkgRoot": "./packages/geostyler-sld-parser-monorepo-test"
+      }
+    ],
     [
       "@semantic-release/git",
       {
