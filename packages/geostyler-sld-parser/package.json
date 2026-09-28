@@ -1,5 +1,5 @@
 {
-  "name": "geostyler-sld-parser",
+  "name": "geostyler-sld-parser-monorepo-test",
   "version": "9.0.3",
   "description": "GeoStyler Style Parser implementation for SLD",
   "type": "module",
@@ -36,7 +36,7 @@
   },
   "dependencies": {
     "fast-xml-parser": "^5.2.3",
-    "geostyler-style": "^13.0.0"
+    "geostyler-style-monorepo-test": "^13.0.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^20.3.1",
