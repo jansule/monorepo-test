@@ -1,3 +1,9 @@
+## [1.0.1](https://github.com/jansule/monorepo-test/compare/v1.0.0...v1.0.1) (2026-09-28)
+
+### Bug Fixes
+
+* trigger release ([c5dee55](https://github.com/jansule/monorepo-test/commit/c5dee55924a593c502e619b59de00a91f6c7d101))
+
 ## 1.0.0 (2026-09-28)
 
 ### Bug Fixes
