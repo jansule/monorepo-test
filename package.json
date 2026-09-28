@@ -22,6 +22,7 @@
     "@semantic-release/git": "^11.0.1",
     "@types/node": "^26.6.3",
     "conventional-changelog-conventionalcommits": "^10.4.0",
+    "conventional-changelog-writer": "^9.2.1",
     "semantic-release": "^25.0.9",
     "typescript": "^6.0.3"
   }
