@@ -1,4 +1,4 @@
-import { Style } from '../../../geostyler-style-monorepo-test/dist';
+import { Style } from 'geostyler-style-monorepo-test';
 
 const lineSimpleLine: Style = {
   name: 'Wegdeel_vlak_style',

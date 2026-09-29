@@ -62,7 +62,7 @@ import {
   MarkSymbolizer,
   Style,
   TextSymbolizer
-} from '../../geostyler-style-monorepo-test/dist';
+} from 'geostyler-style-monorepo-test';
 
 it('SldStyleParser is defined', () => {
   expect(SldStyleParser).toBeDefined();

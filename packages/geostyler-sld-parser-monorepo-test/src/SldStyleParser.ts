@@ -37,7 +37,7 @@ import {
   WriteStyleResult,
   DistanceUnit,
   BasePointSymbolizer, BaseSymbolizer
-} from '../../geostyler-style-monorepo-test/dist';
+} from 'geostyler-style-monorepo-test';
 import {
   X2jOptions,
   XMLBuilder,
