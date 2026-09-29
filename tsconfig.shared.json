@@ -1,0 +1,20 @@
+{
+	"compilerOptions": {
+		"allowJs": false,
+		"declaration": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"inlineSources": true,
+		"lib": ["ES2022", "dom"],
+		"moduleResolution": "Bundler",
+		"noImplicitAny": true,
+		"noImplicitReturns": true,
+		"noImplicitThis": true,
+		"noUnusedLocals": true,
+		"outDir": "${configDir}/dist",
+		"rootDir": "${configDir}",
+		"sourceMap": true,
+		"strictNullChecks": true,
+		"target": "ES2022"
+	}
+}
