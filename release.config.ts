@@ -1,4 +1,24 @@
-{
+import packageJson from './package.json';
+
+const workspacePackages = packageJson.workspaces || [];
+
+const npmConfigurations = workspacePackages.map(pkg => [
+  "@semantic-release/npm",
+  {
+    pkgRoot: `./${pkg}`
+  }
+]);
+
+const gitAssets = [
+  "CHANGELOG.md",
+  "package.json",
+  "package-lock.json"
+].concat(
+  workspacePackages
+    .flatMap(pkg => [`./${pkg}/package.json`, `./${pkg}/package-lock.json`])
+  );
+
+export default {
   "branches": [
     "main",
     {
@@ -23,27 +43,20 @@
       }
     ],
     "@semantic-release/changelog",
+    ...npmConfigurations,
     [
-      "@semantic-release/npm",
+      "./release/update-workspace-deps.mjs",
       {
-        "pkgRoot": "./packages/geostyler-style-monorepo-test"
-      }
-    ],
-    [
-      "@semantic-release/npm",
-      {
-        "pkgRoot": "./packages/geostyler-sld-parser-monorepo-test"
+        "rangePrefix": "^"
       }
     ],
     [
       "@semantic-release/git",
       {
-        "assets": [
-          "CHANGELOG.md", "package.json", "package-lock.json"
-        ],
+        "assets": gitAssets,
         "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
       }
     ],
     "@semantic-release/github"
   ]
-}
+};
