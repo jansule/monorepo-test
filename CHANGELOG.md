@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/jansule/monorepo-test/compare/v1.0.2...v1.0.3) (2026-09-29)
+
+### Bug Fixes
+
+* add type info when importing json ([7c87629](https://github.com/jansule/monorepo-test/commit/7c876296bbbd77013482f015af37b3b8cf19c79f))
+* update versions in dependencies on release ([ef8ebfe](https://github.com/jansule/monorepo-test/commit/ef8ebfe8b3ca2b096f56df67c900699f9d1ba54b))
+
 ## [1.0.2](https://github.com/jansule/monorepo-test/compare/v1.0.1...v1.0.2) (2026-09-28)
 
 ### Bug Fixes
