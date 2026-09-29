@@ -1,27 +1,27 @@
 import { defineConfig } from 'vite';
-import path from 'path';
+import { fileURLToPath } from 'node:url';
+
+import {
+  sharedBuildConfig,
+  sharedPreserveModulesOutput,
+} from '../../vite.config.shared.mjs';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [],
   build: {
+    ...sharedBuildConfig,
     lib: {
-      entry: path.resolve(__dirname, 'src/SldStyleParser.ts'),
+      entry: fileURLToPath(new URL('./src/SldStyleParser.ts', import.meta.url)),
       formats: ['es'],
       fileName: 'SldStyleParser',
     },
-    rollupOptions: {
+    rolldownOptions: {
       external: ['geostyler-style-monorepo-test', 'fast-xml-parser'],
       output: {
-        dir: 'dist',
-        preserveModules: true,
-        preserveModulesRoot: 'src',
-        entryFileNames: '[name].js',
+        ...sharedPreserveModulesOutput,
         externalLiveBindings: false,
       },
     },
-    sourcemap: true,
-    outDir: 'dist',
     emptyOutDir: false,
   },
 });

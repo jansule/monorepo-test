@@ -1,6 +1,10 @@
 import { defineConfig } from 'vite';
 import dts from 'vite-plugin-dts';
 
+import {
+  sharedBuildConfig,
+  sharedPreserveModulesOutput,
+} from '../../vite.config.shared.mjs';
 import pkg from './package.json';
 
 const externalDeps = [
@@ -20,17 +24,15 @@ export default defineConfig({
     }),
   ],
   build: {
+    ...sharedBuildConfig,
     lib: {
       entry: 'src/index.ts',
       fileName: 'index',
       formats: ['es'],
     },
-    sourcemap: true,
     rolldownOptions: {
       output: {
-        preserveModules: true,
-        preserveModulesRoot: 'src',
-        entryFileNames: '[name].js',
+        ...sharedPreserveModulesOutput,
       },
       external: (id) => {
         return externalDeps.some(

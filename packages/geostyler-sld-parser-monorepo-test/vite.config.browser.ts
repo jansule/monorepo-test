@@ -1,9 +1,11 @@
 import { defineConfig } from 'vite';
 
+import { sharedBuildConfig } from '../../vite.config.shared.mjs';
+
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [],
   build: {
+    ...sharedBuildConfig,
     manifest: true,
     lib: {
       entry: './src/SldStyleParser.ts',
@@ -11,15 +13,11 @@ export default defineConfig({
       formats: ['iife'],
       fileName: 'sldStyleParser',
     },
-    rollupOptions: {
+    rolldownOptions: {
       output: {
-        dir: 'dist',
         exports: 'named',
-        generatedCode: 'es5',
-        format: 'iife',
       },
     },
-    sourcemap: true
   },
   define: {
     appName: 'GeoStyler'
