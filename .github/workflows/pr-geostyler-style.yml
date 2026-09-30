@@ -7,7 +7,6 @@ on:
       - '**'
       - '!packages/**'
       - 'packages/geostyler-style-monorepo-test/**'
-      - '!*.md'
 
 jobs:
   build:
