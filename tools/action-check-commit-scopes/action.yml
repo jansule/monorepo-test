@@ -1,0 +1,17 @@
+name: Check commit scopes
+description: Fails if a commit touches a package without naming that package in its conventional commit scope.
+
+inputs:
+  base-sha:
+    description: Commit to start from (exclusive).
+    required: true
+  head-sha:
+    description: Last commit to check (inclusive).
+    required: true
+  packages-dir:
+    description: Directory containing all workspace packages.
+    default: packages
+
+runs:
+  using: node24
+  main: index.mjs
