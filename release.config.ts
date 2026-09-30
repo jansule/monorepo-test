@@ -45,7 +45,7 @@ export default {
     "@semantic-release/changelog",
     ...npmConfigurations,
     [
-      "./release/update-workspace-deps.mjs",
+      "./tools/release-plugin-update-workspace-deps/index.mjs",
       {
         "rangePrefix": "^"
       }

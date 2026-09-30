@@ -1,0 +1,21 @@
+name: Detect affected parsers
+description: Lists the parser packages affected by the changes since a base commit.
+
+inputs:
+  base-sha:
+    description: Commit to compare HEAD against.
+    required: true
+  style-package:
+    description: Path of the geostyler-style package all parsers depend on.
+    default: packages/geostyler-style-monorepo-test
+  packages-dir:
+    description: Directory containing all workspace packages.
+    default: packages
+
+outputs:
+  parsers:
+    description: JSON array of affected parser package paths.
+
+runs:
+  using: node24
+  main: index.mjs
