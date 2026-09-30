@@ -14,7 +14,7 @@
     "lint": "eslint src",
     "check": "tsc --noEmit",
     "build": "vite build",
-    "test": "vitest --coverage",
+    "test": "vitest run --coverage",
     "generate-schema": "typescript-json-schema tsconfig.json Style --id http://geostyler/geostyler-style.json > schema.json",
     "generate-docs": "typedoc src/index.ts",
     "prepublishOnly": "npm run build && npm run generate-schema"
